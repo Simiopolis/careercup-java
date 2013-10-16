@@ -17,7 +17,7 @@
  * the movie "up" would be "dddd!u!".
  * 
  * Submitted by pjsky
- * Written by Thinh Lam on October 16, 2013
+ * Written by Thinh Lam on October 16, 2013.
  */
 
 package google;
@@ -34,28 +34,38 @@ public class GoogleMovieLookup {
 		int prevRow = 0;
 		
 		for(char c : arr) {
-			int position =  (c - 'a') % width;
+			// Tricks I learned from a solution on CareerCup.
+			// Get the horizontal distance moved.
+			int position =  (c - 'a') % width; 
+			// Get the vertical distance moved.
 			int row = (c - 'a') / width;
 			
-			if(position - prevPosition != 0) {
-				if(position - prevPosition > 0)
-					printCommand("r", position-prevPosition);
-				else if(position - prevPosition < 0)
-					printCommand("l", (position-prevPosition)*-1);
+			// Print horizontal movement.
+			int deltaHorizontal = position - prevPosition;
+			if(deltaHorizontal != 0) {
+				if(deltaHorizontal > 0)
+					printCommand("r", deltaHorizontal);
+				else if(deltaHorizontal < 0)
+					printCommand("l", deltaHorizontal*-1);
 				prevPosition = position;
 			}
 			
-			if(row - prevRow != 0) {
+			// Print vertical movement.
+			int deltaVertical = row - prevRow;
+			if(deltaVertical != 0) {
 				if(row - prevRow > 0)
-					printCommand("d", row-prevRow);
+					printCommand("d", deltaVertical);
 				else if(row - prevRow < 0)
-					printCommand("u", (row-prevRow)*-1);
+					printCommand("u", deltaVertical*-1);
 				prevRow = row;
 			}
+			
+			// Select after making the necessary movement.
 			printCommand("!", 1);
 		}
 	}
 	
+	// Helper method to print a command n times.
 	public static void printCommand(String command, int n) {
 		for(int i=0; i < n; i++)
 			System.out.print(command);
