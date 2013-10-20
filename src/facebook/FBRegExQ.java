@@ -55,7 +55,8 @@ public class FBRegExQ {
 		// If the last character is a '*', check if target matches the regex with or without the 
 		// '*' character and continue recursing.
 		if(regex.charAt(rLength-1) == '*') {
-			return (isMatch(regex.substring(0, rLength-1), target) || isMatch(regex.substring(0, rLength-2), target)) &&
+			return (isMatch(regex.substring(0, rLength-1), target) || 
+					isMatch(regex.substring(0, rLength-2), target)) &&
 					isMatch(regex.substring(0, rLength-2), target);
 		} 
 		// If the last character is a '.', just continue recursing because we don't care
@@ -66,6 +67,7 @@ public class FBRegExQ {
 		// case we simply check the last characters of both arguments for equivalency and 
 		// continue recursing.
 		else
-			return (regex.charAt(rLength-1) == target.charAt(tLength-1)) && isMatch(regex.substring(0, rLength-1), target.substring(0, tLength-1));
+			return (regex.charAt(rLength-1) == target.charAt(tLength-1)) && 
+					isMatch(regex.substring(0, rLength-1), target.substring(0, tLength-1));
 	}
 }
