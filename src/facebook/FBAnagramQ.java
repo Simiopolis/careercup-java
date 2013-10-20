@@ -1,5 +1,5 @@
 /**
- * Careercup.com question(http://www.careercup.com/question?id=5111068527427584)
+ * Link: http://www.careercup.com/question?id=5111068527427584
  * 
  * Input - List<String> ["star", "rats", "ice", "cie", "arts"] 
  * 
@@ -12,7 +12,7 @@
  * public void anagramBuckets(List<String> input);
  * 
  * Submitted by sunnyhust2005
- * Solution by Thinh Lam on October 12, 2013.
+ * Solved on October 12, 2013.
  */
 
 package facebook;

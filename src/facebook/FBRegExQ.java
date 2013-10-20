@@ -16,7 +16,7 @@
  * "a*" is "a" or is an empty string ""
  * 
  * Submitted by kevin
- * Solved on October 20, 2013
+ * Solved on October 20, 2013.
  */
 package facebook;
 

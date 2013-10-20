@@ -1,5 +1,5 @@
 /**
- * Careercup.com question(http://www.careercup.com/question?id=5074387359236096).
+ * Link http://www.careercup.com/question?id=5074387359236096
  * Complete the below function which takes an arraylist and displays the list in the expected output. 
  * 
  * Example input: 
@@ -24,7 +24,7 @@
  * line 7: fish
  * 
  * Submitted by AP.
- * Written by Thinh Lam on October 16, 2013.
+ * Solved on October 16, 2013.
  */
 package google;
 

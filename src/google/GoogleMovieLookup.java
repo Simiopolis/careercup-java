@@ -1,5 +1,5 @@
 /**
- * Careercup.com question(http://www.careercup.com/question?id=6741345771192320)
+ * Link: http://www.careercup.com/question?id=6741345771192320
  * 
  * I need a function that takes the name of the movie to look up and 
  * the width of the letter grid, and computes the key presses that 
@@ -17,7 +17,7 @@
  * the movie "up" would be "dddd!u!".
  * 
  * Submitted by pjsky
- * Written by Thinh Lam on October 16, 2013.
+ * Solved on October 16, 2013.
  */
 
 package google;
