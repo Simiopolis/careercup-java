@@ -30,3 +30,6 @@ _$*
 /bin
 /bin
 /bin
+.settings
+.classpath
+.project
