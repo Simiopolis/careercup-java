@@ -5,7 +5,7 @@
  * {{1,2}, {3}, {4,5}} ... Output should be {1, 2, 3, 4, 5}
  * 
  * Submitted by wassp
- * 
+ * Solved on October 21, 2013.
  */
 package microsoft;
 
